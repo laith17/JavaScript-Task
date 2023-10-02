@@ -129,3 +129,87 @@
 //   default:
 //     console.log("PLEASE TRY AGAIN");
 // }
+
+////////////////////////////////////////////////////////////////////////!
+
+//* Q7: Use a loop to display the numbers 0 through 5, each in a separate alert window.
+
+// for (let i = 0; i <= 5; i++) {
+//   alert(i);
+// }
+
+////////////////////////////////////////////////////////////////////////!
+
+//* Q8: Use a loop to display the numbers 0 through 5 in a single alert window
+
+// let arr = [];
+// for (let i = 0; i <= 5; i++) {
+//   arr.push(i);
+// }
+// alert(arr);
+
+////////////////////////////////////////////////////////////////////////!
+
+//* Q9: Use a loop to display the numbers in the range 0…20 that are multiples of 3.
+
+// for (let i = 3; i <= 20; i *= 3) {
+//   if (i != 0 && i != 1 && i != 2) {
+//     alert(i);
+//   }
+// }
+
+////////////////////////////////////////////////////////////////////////!
+
+//* Q10: Prompt the user for a number in the range 0…100.  If the number is out of range, display an error message and prompt again until a valid number is entered.  Assume the user enters a number each time
+
+// let number = parseFloat(prompt("Enter a number between (0 and 100):"));
+
+// while (number < 0 || number > 100 || isNaN(number)) {
+//   alert("The number is out of range! Try again.");
+//   number = parseFloat(prompt("Enter a number between (0 and 100):"));
+// }
+
+////////////////////////////////////////////////////////////////////////!
+
+//* Q11: Repeat previous exercise, but this time allow for the possibility that the user enters something that is not a number.  Hint: the built in function isNaN(x) returns true if x is not a number.  It returns false if x is a number.  Sort of backwards, but that's what's available.
+
+// let number = parseFloat(prompt("Enter a number between (0 and 100):"));
+
+// while (number < 0 || number > 100) {
+//   alert("The number is out of range! Try again.");
+//   number = parseFloat(prompt("Enter a number between (0 and 100):"));
+// }
+
+////////////////////////////////////////////////////////////////////////!
+
+//* Q12: Prompt for an integer, then display the sum of the integers from 0 through the number entered.  For example, if you enter 10, then display 55 which is the sum of   0 + 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10
+
+// let number = parseInt(prompt("Enter a number:"));
+// let sum = 0;
+
+// while (true) {
+//   for (let i = 0; i <= number; i++) {
+//     sum += i;
+//   }
+//   alert(`The sum is: ${sum}`);
+
+//   number = parseInt(prompt("Enter a number:"));
+//   sum = 0;
+// }
+
+////////////////////////////////////////////////////////////////////////!
+
+//* Q13: Prompt for an integer, then display the average of the integers from 0 through the number entered.  For example, if you enter 10, then display 5 which is the average of   (0 + 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10)/11.
+
+// let number = parseInt(prompt("Enter a number:"));
+// let sum = 0;
+
+// while (true) {
+//   for (let i = 0; i <= number; i++) {
+//     sum += i;
+//   }
+//   alert(`The avg is: ${Math.floor(sum / number)}`);
+
+//   number = parseInt(prompt("Enter a number:"));
+//   sum = 0;
+// }
